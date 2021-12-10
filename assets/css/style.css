@@ -1,0 +1,43 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+.container{
+    display: flex; 
+    flex-direction: column;   
+}
+main{
+    margin-top: 60px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    color: #fff;    
+    
+}
+main .mockup{
+    display: flex;
+    flex: 1;
+}
+main .description{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+main .description h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+footer{
+    display: flex;
+    align-items: baseline;
+}
+footer .attribution { 
+    font-size: 11px; text-align: center; 
+}
+footer .attribution a {
+     color: hsl(228, 45%, 44%); 
+}
