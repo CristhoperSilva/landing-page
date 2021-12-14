@@ -19,15 +19,16 @@ main{
     justify-content: space-between;     
 }
 main .mockup{    
-    width: 700px;    
-    display: flex;    
+    width: 50%;    
+    display: flex; 
+    margin-right: 20px;   
 }
 main .mockup img{
     width: 100%;
-
 }
 main .description{    
-    width: 510px;    
+    width: 45%;
+    max-width: 510px;    
     display: flex;
     flex-direction: column;    
 }
@@ -51,25 +52,73 @@ main .description button{
     border-radius: 30px;
     background-color: #fff;
     color: hsl(257, 40%, 49%);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.53);
+}
+main .description button:hover{
+    background-color: hsl(300, 69%, 71%);
 
 }
 footer{
+    margin-left: 60px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
     display: flex;
-    align-items: baseline;
+    align-items: baseline;    
 }
 footer .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 13px; 
+    text-align: center; 
 }
 footer .attribution a {
-     color: hsl(228, 45%, 44%); 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+     color: hsl(300, 69%, 71%); 
 }
 .social{
-    display: flex;
-    width: 120px;    
-    justify-content: space-between;
-}
-.social i{
-    color: #fff;
-    font-size: 20px;    
+    display: flex;    
+    justify-content: flex-end;                
 }
 
+.social a{      
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px; 
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #fff solid 2px;
+    border-radius: 50px;   
+}
+.social a:hover{
+    border: hsl(300, 69%, 71%) solid 2px;
+    color: hsl(300, 69%, 71%);
+}
+@media (max-width:1000px){
+
+    main .description{
+        width: 400px;              
+    }
+    main .description h1{
+        font-size: 28px;
+    }
+    main .description p{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    main .mockup{
+        width: 400px;        
+    }
+    main .description button{
+        margin-top: 10px;
+        font-size: 15px;
+        width: 150px;
+        height: 40px;
+    }
+    .social{
+        margin-top: 10px;
+    }
+}
