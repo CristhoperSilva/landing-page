@@ -4,7 +4,7 @@ body{
     padding: 0;
     background-image: url(../images/bg-desktop.svg);
     background-repeat: no-repeat;
-    background-color: hsl(257, 40%, 49%);
+    background-color: hsl(257, 40%, 49%);       
 }
 .container{
     display: flex; 
@@ -12,7 +12,7 @@ body{
     margin: 20px 60px 0px 60px;
 }
 main{
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;    
     flex-direction: row;
     color: #fff; 
@@ -60,26 +60,27 @@ main .description button:hover{
 }
 footer{
     margin-left: 60px;
+    margin-bottom: 0;
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     display: flex;
-    align-items: baseline;    
+    align-items: baseline;  
+    padding: 0;  
 }
 footer .attribution { 
-    font-size: 13px; 
+    font-size: 11px; 
     text-align: center; 
 }
 footer .attribution a {
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     text-decoration: none;
-     color: hsl(300, 69%, 71%); 
+    color: hsl(300, 69%, 71%); 
 }
 .social{
     display: flex;    
     justify-content: flex-end;                
 }
-
 .social a{      
     color: #fff;
     text-decoration: none;
@@ -107,7 +108,7 @@ footer .attribution a {
     }
     main .description p{
         margin-top: 5px;
-        font-size: 15px;
+        font-size: 16px;
     }
     main .mockup{
         width: 400px;        
@@ -120,5 +121,46 @@ footer .attribution a {
     }
     .social{
         margin-top: 10px;
+    }
+}
+@media (max-width:425px){
+    body{
+        background-image: url(../images/bg-mobile.svg);
+    }
+    .container{
+        margin: 20px 30px 0px 30px;
+    }
+    main{
+        flex-direction: column;
+    }
+    main .mockup{
+        width: auto;
+    }
+    main .description{
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }    
+    .logo img{
+        width: 120px;
+    }
+    main .description h1{                
+        margin-top: 20px;
+        font-size: 22px;
+    }
+    .social{
+        margin-top: 40px;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 20px;        
+    }
+    .social a{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+    footer{        
+        margin: 30px 30px 0px 30px;
+        justify-content: center;
     }
 }
